@@ -38,6 +38,6 @@ https://dotnet.microsoft.com/download/dotnet/6.0
 dotnet fsi
 ```
 
-Ctrl + D で終了できます。無限ループを起こしたときは Ctrl + C で強制的に終了させられます。 
+Ctrl + D を押して終了できます。無限ループを起こしたときは Ctrl + C を押して強制的に終了させられます。 
 
 REPL は入力文字列を読み (Read) 、評価 (Eval) し、結果を出力 (Print) することを繰り返します (Loop) 。
