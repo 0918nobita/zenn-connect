@@ -12,9 +12,26 @@ Rust の基本的な言語機能等の説明はしません。Rust の公式チ�
 
 ## はじめに
 
-僕は普段 TypeScript で Web アプリを開発したり、関数型プログラミング言語で遊んだりしている人です。ネイティブの GUI アプリケーションの開発や 3D グラフィックス API の利用については全くの初心者です。この記事では、そんな僕が Rust を使って Vulkan に入門して、ウィンドウに三角形を描画することに成功するまでの道筋や考えたことをまとめてみました。
+僕は普段 TypeScript で Web アプリを開発したり、関数型プログラミング言語で遊んだりしている人です。ネイティブの GUI アプリケーションの開発や 3D グラフィックス API の利用については全くの初心者です。今回、そんな僕が Rust を用いて Vulkan に入門し、**ウィンドウに三角形を描画する**ことに成功するまでの道筋や考えたことをまとめてみました。
+
+## 動作確認をしている環境について
+
+Arch Linux x86_64, GNOME 40.5 をインストールしたマシン (Lenovo ThinkPad X230) で動作確認をしています。
 
 ## Vulkan SDK のインストール
+
+https://wiki.archlinux.org/title/Vulkan#Installation
+
+ArchWiki での説明を参考に、以下のパッケージをインストールしました。
+
+- `vulkan-intel`
+- `vulkan-headers`
+- `vulkan-validation-layers`
+- `vulkan-tools`
+
+```bash
+yay -S vulkan-intel vulkan-headers vulkan-validation-layers vulkan-tools
+```
 
 ## Cargo パッケージの作成
 
