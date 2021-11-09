@@ -33,6 +33,8 @@ https://dotnet.microsoft.com/download/dotnet/6.0
 
 ## F# に軽く入門してみる
 
+### REPL の基本的な使い方
+
 以下のコマンドを実行して、F# の対話型実行環境 (以下、REPL) を起動します。
 
 ```bash
@@ -42,3 +44,13 @@ dotnet fsi
 Ctrl + D を押して終了できます。無限ループを起こしたときは Ctrl + C を押して強制的に終了させられます。 
 
 REPL は入力文字列を読み (Read) 、評価 (Eval) し、結果を出力 (Print) することを繰り返します (Loop) 。
+
+### F# Script (`.fsx`) の使い方
+
+```fsharp:hello.fsx
+printfn "Hello from F#"
+```
+
+```bash
+dotnet fsi hello.fsx
+```
