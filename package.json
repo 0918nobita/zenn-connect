@@ -1,0 +1,20 @@
+{
+  "name": "zenn-connect",
+  "version": "0.1.0",
+  "scripts": {
+    "preview": "zenn preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0918nobita/zenn-connect.git"
+  },
+  "author": "0918nobita <nobita.0918@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0918nobita/zenn-connect/issues"
+  },
+  "homepage": "https://github.com/0918nobita/zenn-connect#readme",
+  "devDependencies": {
+    "zenn-cli": "^0.1.98"
+  }
+}
