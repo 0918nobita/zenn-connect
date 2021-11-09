@@ -16,4 +16,5 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           level: warning
+          fail_on_error: true
           textlint_flags: '.'
