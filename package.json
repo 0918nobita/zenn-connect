@@ -2,7 +2,8 @@
   "name": "zenn-connect",
   "version": "0.1.0",
   "scripts": {
-    "preview": "zenn preview"
+    "preview": "zenn preview",
+    "lint": "textlint ."
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,9 @@
   },
   "homepage": "https://github.com/0918nobita/zenn-connect#readme",
   "devDependencies": {
+    "textlint": "^12.0.2",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "zenn-cli": "^0.1.98"
   }
 }
