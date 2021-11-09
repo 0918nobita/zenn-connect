@@ -1,5 +1,5 @@
 ---
-title: PureScript でプログラミング入門 第1章
+title: PureScript 入門 第1章
 emoji: 🎉 
 type: tech
 topics: ["purescript"]
