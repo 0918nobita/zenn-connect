@@ -9,7 +9,7 @@ Python の環境構築を進めていきます。
 
 Python ランタイムを管理してくれる pyenv を導入します。
 
-## poetry の導入
+## Poetry の導入
 
 Python のパッケージ管理で便利なツールである Poetry を導入します。
 
@@ -30,9 +30,9 @@ cd mylang
 poetry add -D mypy
 ```
 
-### wasmer の導入
+### Wasmer の導入
 
-WebAssembly のランタイムである wasmer を導入します。
+WebAssembly のランタイムである Wasmer を導入します。
 
 ```bash
 poetry add wasmer
