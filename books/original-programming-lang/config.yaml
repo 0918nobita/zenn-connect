@@ -1,0 +1,8 @@
+title: "オリジナルのプログラミング言語をつくろう"
+summary: "コンパイラを実装する"
+topics: ["compiler"]
+published: false
+price: 500
+chapters:
+  - 1-intro
+  - 2-dev-env
