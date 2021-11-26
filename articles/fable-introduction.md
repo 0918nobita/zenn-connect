@@ -1,8 +1,8 @@
 ---
-title: JS / TS で疲弊している人に Fable (F#) をオススメする記事
+title: JS / TS で疲弊している人のための F# 入門
 emoji: 💙
 type: tech
-topics: ["javascript", "fsharp", "fable"]
+topics: ["javascript", "typescript", "fsharp", "fable"]
 published: false
 ---
 
@@ -12,7 +12,7 @@ JavaScript / TypeScript で疲弊していて、もっと快適に Web フロン
 
 ## 要するに
 
-Fable を導入すると、それまで JS / TS で頑張っていた部分が、代わりに最高なプログラミング言語 F# で簡潔に書けるようになり、幸せになれます。
+Fable というツールを導入すると、それまで JS / TS で頑張っていた部分が、代わりに最高なプログラミング言語 F# で簡潔に書けるようになり、幸せになれます。
 
 ## F# を知らない人へ
 
