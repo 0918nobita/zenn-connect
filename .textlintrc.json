@@ -26,7 +26,7 @@
       }
     },
     "ja-technical-writing/ja-no-mixed-period": {
-      "allowPeriodMarks": [":"],
+      "allowPeriodMarks": ["："],
     },
     "ja-technical-writing/max-kanji-continuous-len": {
       allow: ["対話型実行環境", "共通中間言語"]

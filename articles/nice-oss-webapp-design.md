@@ -6,9 +6,7 @@ topics: ["oss", "webサービス"]
 published: false
 ---
 
-<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 前回：
-<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 
 https://zenn.dev/0918nobita/articles/webapp-how-nice-your-oss-is
 
