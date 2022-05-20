@@ -1,0 +1,7 @@
+title: "QRコードとバーコードの生成アルゴリズム"
+summary: "F# で実装して学ぶ、QRコード・バーコード生成の仕組み"
+topics: []
+published: false
+price: 500
+chapters:
+  - 1-intro
