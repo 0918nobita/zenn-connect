@@ -1,6 +1,6 @@
-title: "オリジナルのプログラミング言語をつくろう"
-summary: "コンパイラを実装する"
-topics: ["compiler"]
+title: "続・いまどきのプログラム言語の作り方"
+summary: "F# で作る式指向プログラミング言語の処理系"
+topics: ["interpreter", "compiler", "fsharp"]
 published: false
 price: 500
 chapters:
