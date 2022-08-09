@@ -1,28 +1,8 @@
-type WatPrimType = I32
-
-type WatFuncIndex = WatFuncIndex of int
-
-type WatInst =
-    | I32Const of int
-    | Call of WatFuncIndex
-
-type WatFunc = WatFunc of parameters: list<WatPrimType> * result: WatPrimType * body: list<WatInst>
-
-let mainFunc =
-    WatFunc(
-        parameters = [],
-        result = I32,
-        body =
-            [ I32Const 0
-              I32Const 15
-              Call(WatFuncIndex 0) ]
-    )
-
-type Wat =
+type SExpr =
     | Atom of string
-    | List of list<Wat>
+    | List of list<SExpr>
 
-module Wat =
+module SExpr =
     let rec toString =
         function
         | Atom str -> str
@@ -33,5 +13,56 @@ module Wat =
             |> sprintf "(%s)"
 
 List [ Atom "module" ]
-|> Wat.toString
+|> SExpr.toString
 |> printfn "%s"
+
+type WatPrimType = I32
+
+module WatPrimType =
+    let toString =
+        function
+        | I32 -> "i32"
+
+type WatInst =
+    | I32Const of value: int
+    | I32Add
+    | I32Mul
+    | GetLocal of index: int
+    | Call of index: int
+
+type WatFunc = WatFunc of parameters: list<WatPrimType> * result: option<WatPrimType> * body: list<WatInst>
+
+module WatFunc =
+    let toSExpr (WatFunc (parameters, _result, _body)) =
+        let parameters =
+            parameters
+            |> List.map (fun ty ->
+                List [ Atom "param"
+                       Atom(WatPrimType.toString ty) ])
+
+        // TODO: result, body も SExpr に変換する
+
+        List(Atom "func" :: parameters)
+
+let func =
+    WatFunc(
+        parameters = [ I32; I32 ],
+        result = Some I32,
+        body =
+            [ GetLocal 0
+              I32Const 3
+              I32Add
+              GetLocal 1
+              I32Mul ]
+    )
+
+func
+|> WatFunc.toSExpr
+|> SExpr.toString
+|> printfn "%s"
+
+type WatReprMember = WatReprFunc of WatFunc
+
+type WatRepr = WatRepr of list<WatReprMember>
+
+// TODO: WatRepr -> SExpr
