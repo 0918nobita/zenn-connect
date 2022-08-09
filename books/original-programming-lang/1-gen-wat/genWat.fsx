@@ -17,3 +17,21 @@ let mainFunc =
               I32Const 15
               Call(WatFuncIndex 0) ]
     )
+
+type Wat =
+    | Atom of string
+    | List of list<Wat>
+
+module Wat =
+    let rec toString =
+        function
+        | Atom str -> str
+        | List list ->
+            list
+            |> List.map toString
+            |> String.concat " "
+            |> sprintf "(%s)"
+
+List [ Atom "module" ]
+|> Wat.toString
+|> printfn "%s"
