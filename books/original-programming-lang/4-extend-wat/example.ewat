@@ -1,0 +1,8 @@
+(func add-and-write
+    void       ;; return type
+    [addr i32  ;; parameter list
+     x    i32
+     y    i32]
+    ;; body
+    (let [sum (i32.add x y)]
+        (i32.store addr sum)))
