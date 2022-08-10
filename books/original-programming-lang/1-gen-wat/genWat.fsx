@@ -33,16 +33,23 @@ type WatInst =
 type WatFunc = WatFunc of parameters: list<WatPrimType> * result: option<WatPrimType> * body: list<WatInst>
 
 module WatFunc =
-    let toSExpr (WatFunc (parameters, _result, _body)) =
+    let toSExpr (WatFunc (parameters, result, _body)) =
         let parameters =
             parameters
             |> List.map (fun ty ->
                 List [ Atom "param"
                        Atom(WatPrimType.toString ty) ])
 
-        // TODO: result, body も SExpr に変換する
+        let result =
+            result
+            |> Option.map (fun ty ->
+                [ List [ Atom "result"
+                         Atom(WatPrimType.toString ty) ] ])
+            |> Option.defaultValue []
 
-        List(Atom "func" :: parameters)
+        // TODO: body も SExpr に変換する
+
+        List(Atom "func" :: parameters @ result)
 
 let func =
     WatFunc(
