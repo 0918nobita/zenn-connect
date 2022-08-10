@@ -5,14 +5,14 @@ specifiers:
   textlint-filter-rule-comments: ^1.2.2
   textlint-rule-preset-ja-spacing: ^2.2.0
   textlint-rule-preset-ja-technical-writing: ^7.0.0
-  zenn-cli: ^0.1.116
+  zenn-cli: ^0.1.117
 
 devDependencies:
   textlint: 12.2.1
   textlint-filter-rule-comments: 1.2.2_textlint@12.2.1
   textlint-rule-preset-ja-spacing: 2.2.0
   textlint-rule-preset-ja-technical-writing: 7.0.0_textlint@12.2.1
-  zenn-cli: 0.1.116
+  zenn-cli: 0.1.117
 
 packages:
 
@@ -2348,8 +2348,8 @@ packages:
     engines: {node: '>=0.4'}
     dev: true
 
-  /zenn-cli/0.1.116:
-    resolution: {integrity: sha512-EvbhNl7G+rIpzh+JWC4FJM3mre+fAJoKFwq7kc7u82hR5QKjwxNfdJN1OMdf1RZrl3+PjUHA4etaAf2fVn/ucQ==}
+  /zenn-cli/0.1.117:
+    resolution: {integrity: sha512-1IvPRwB+cTRl3R+5MgdFm6h++c3xzRTzrtxX5KRq2M7+AB2dF1hWBqwTS8n+u/edkTZxhXQJi94Uw8cbMdXGfg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dev: true
