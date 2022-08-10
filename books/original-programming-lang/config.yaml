@@ -6,3 +6,4 @@ price: 500
 chapters:
   - 1-intro
   - 2-dev-env
+  - 3-wasm
